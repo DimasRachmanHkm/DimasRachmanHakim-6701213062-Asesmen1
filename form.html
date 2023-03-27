@@ -2,24 +2,18 @@
 <head><title>Operasi perhitungan</title></head>
 <body>
     <h2>Isian angka</h2>
-<table>
-<tr>
-<td width=50>Angka1 : <input type=number name=angka1 ></td>
-</tr>
-<tr>
-<td width=50>Angka2:<input type=number name=angka2></td>
-</tr>
-
-</table>
-
-<form action="proses.php">
-      <label for="bhs">Pilihan operasi bilangan</label>
-      <select name="operasi" id="opr">
-        <option value="tambah">+ (tambah)</option>
-        <option value="kurang">- (kurang)</option>
-        <option value="kali">* (kali)</option>
-      </select>
-      <input type="submit" value="Kirim" />
-</form>
+    <form action="proses.php" method="post">
+        <label for="angka1">Angka 1:</label>
+        <input type="number" name="angka1" id="angka1" required /><br /><br />
+        <label for="angka2">Angka 2:</label>
+        <input type="number" name="angka2" id="angka2" required /><br /><br />
+        <label for="operator">Operator:</label>
+        <select name="operasi" id="operasi">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+         </select
+        ><br /><br />
+        <button type="submit" name="submit">Hitung</button>
 </body>
 </html>
